@@ -32,14 +32,17 @@ public class Character : MonoBehaviour
         {
             MoveX += Time.deltaTime * PlayerSpeed;
         }
-        if (playerposition.x + MoveX <= -8 || playerposition.x + MoveX >= 8.5) MoveX = 0;
-        if (playerposition.y + MoveY <= -4.5 || playerposition.y + MoveY >= 3) MoveY = 0;
+        //if (playerposition.x + MoveX <= -8 || playerposition.x + MoveX >= 8.5) MoveX = 0;
+        //if (playerposition.y + MoveY <= -4.5 || playerposition.y + MoveY >= 3) MoveY = 0;
         if (MoveX!=0)transform.Translate(MoveX, 0, 0);
         else transform.Translate(0, MoveY, 0);
 
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Messenger.Broadcast<string>(Events.Interact, collision.gameObject.name);
+        if (collision.gameObject.tag == "Interface")
+        {
+            Messenger.Broadcast<string>(Events.Interact, collision.gameObject.name);
+        }
     }
 }

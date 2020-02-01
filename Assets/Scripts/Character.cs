@@ -7,6 +7,7 @@ public class Character : MonoBehaviour
     public Vector3 StartPostion;
     public float PlayerSpeed;
     public float rotateSpeed = 2f;
+    private Quaternion targetAngels = Quaternion.Euler(0, 0, 0);
     void Start()
     {
         transform.position = Vector3.MoveTowards(transform.position, StartPostion, 10000);
@@ -14,7 +15,7 @@ public class Character : MonoBehaviour
 
     void Update()
     {
-        Quaternion targetAngels;
+        
         Vector3 playerposition = transform.position;
         float MoveX = 0;
         float MoveY = 0;
@@ -30,10 +31,12 @@ public class Character : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.A))
         {
+            targetAngels = Quaternion.Euler(0, 90f, 0);
             MoveX -= Time.deltaTime * PlayerSpeed;
         }
         if (Input.GetKey(KeyCode.D))
         {
+            targetAngels = Quaternion.Euler(0, -90, 0);
             MoveX += Time.deltaTime * PlayerSpeed;
         }
         if (playerposition.x + MoveX <= -8 || playerposition.x + MoveX >= 8.5) MoveX = 0;

@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
     public Transform[] child;
-    public Sprite[] sprites;
+    public Sprite bread;
     // Start is called before the first frame update
     private void OnEnable()
     {
@@ -20,17 +21,13 @@ public class Inventory : MonoBehaviour
 
     void AddInventory(string name)
     {
-        /*        for(int i = 1; i < 8; i++)
-                {
-                    GameObject invTemp = GameObject.Find("Inv" + i);
-                    GameObject eItem = GameObject.Find(name);
-
-
-                }*/
-        child = GetComponentsInChildren<Transform>();
-        foreach(Transform invTemp in child)
+        for (int i = 1; i < 8; i++)
         {
-            
+            GameObject invTemp = GameObject.Find("Inv" + i);
+            GameObject eItem = GameObject.Find(name);
+            invTemp.AddComponent<Image>().sprite = 
+
+
         }
 
     }

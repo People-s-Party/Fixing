@@ -9,6 +9,7 @@ public class ItemInform : MonoBehaviour
     public string needName="";
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     private void Start()
     {
@@ -17,6 +18,8 @@ public class ItemInform : MonoBehaviour
 =======
     public int dialogueNum = 0;
 >>>>>>> cbd39af985799a26c00ed54a65fd03ec5736ecc1
+=======
+>>>>>>> parent of cbd39af... something
 =======
 >>>>>>> parent of cbd39af... something
     private void OnEnable()

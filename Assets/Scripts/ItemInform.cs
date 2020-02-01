@@ -27,6 +27,10 @@ public class ItemInform : MonoBehaviour
                     Messenger.Broadcast<string, Sprite>(Events.itemget, gameObject.name, GetComponent<SpriteRenderer>().sprite);
                     Destroy(this.gameObject);
                 }
+                else
+                {
+
+                }
             }
             
         }

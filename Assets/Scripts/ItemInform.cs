@@ -7,6 +7,7 @@ public class ItemInform : MonoBehaviour
     public int itemtype;
     public string needName="";
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -21,6 +22,8 @@ public class ItemInform : MonoBehaviour
 =======
 >>>>>>> parent of cbd39af... something
 >>>>>>> parent of ee82e04... aaa
+=======
+>>>>>>> parent of cbd39af... something
     private void OnEnable()
     {
         Messenger.AddListener<string>(Events.Epressed, action);

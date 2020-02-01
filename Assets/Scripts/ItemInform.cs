@@ -6,6 +6,7 @@ public class ItemInform : MonoBehaviour
 {
     public int itemtype;
     public string needName="";
+    public int dialogueNum = 0;
     private void OnEnable()
     {
         Messenger.AddListener<string>(Events.Epressed, action);
@@ -32,7 +33,10 @@ public class ItemInform : MonoBehaviour
 
                 }
             }
-            
+            if (dialogueNum != 0)
+            {
+                Messenger.Broadcast<int>(Events.dialogue, dialogueNum);
+            }            
         }
     }
 }

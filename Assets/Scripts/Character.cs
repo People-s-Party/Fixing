@@ -38,4 +38,8 @@ public class Character : MonoBehaviour
         else transform.Translate(0, MoveY, 0);
 
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Messenger.Broadcast<string>(Events.Interact, collision.gameObject.name);
+    }
 }

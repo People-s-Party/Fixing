@@ -18,12 +18,12 @@ public class DialogueText : MonoBehaviour
 
     void PrintText(string name)
     {
-        transform.Find("Text").gameObject.SetActive(true);
-        transform.Find("Text").GetComponent<TextMeshProUGUI>().text = name;
+        transform.Find("EName").gameObject.SetActive(true);
+        transform.Find("EName").GetComponent<TextMeshProUGUI>().text = name;
     }
     void RemoveText()
     {
-        transform.Find("Text").gameObject.SetActive(false);
+        transform.Find("EName").gameObject.SetActive(false);
     }
 
 }

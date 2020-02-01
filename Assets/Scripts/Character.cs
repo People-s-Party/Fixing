@@ -36,7 +36,11 @@ public class Character : MonoBehaviour
         //if (playerposition.y + MoveY <= -4.5 || playerposition.y + MoveY >= 3) MoveY = 0;
         if (MoveX!=0)transform.Translate(MoveX, 0, 0);
         else transform.Translate(0, MoveY, 0);
-
+        
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        Messenger.Broadcast(Events.Interactoff);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

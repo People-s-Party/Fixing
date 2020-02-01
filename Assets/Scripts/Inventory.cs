@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
+    public Transform[] child;
+    public Sprite[] sprites;
     // Start is called before the first frame update
     private void OnEnable()
     {
@@ -18,12 +20,17 @@ public class Inventory : MonoBehaviour
 
     void AddInventory(string name)
     {
-        for(int i = 1; i < 8; i++)
-        {
-            GameObject invTemp = GameObject.Find("Inv" + i);
-            //invTemp.AddComponent<SpriteRenderer>().sprite = name;
-            
+        /*        for(int i = 1; i < 8; i++)
+                {
+                    GameObject invTemp = GameObject.Find("Inv" + i);
+                    GameObject eItem = GameObject.Find(name);
 
+
+                }*/
+        child = GetComponentsInChildren<Transform>();
+        foreach(Transform invTemp in child)
+        {
+            
         }
 
     }

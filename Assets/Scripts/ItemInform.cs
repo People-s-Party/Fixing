@@ -8,6 +8,7 @@ public class ItemInform : MonoBehaviour
     public string needName="";
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -22,6 +23,8 @@ public class ItemInform : MonoBehaviour
 =======
 >>>>>>> parent of cbd39af... something
 >>>>>>> parent of ee82e04... aaa
+=======
+>>>>>>> parent of cbd39af... something
 =======
 >>>>>>> parent of cbd39af... something
     private void OnEnable()

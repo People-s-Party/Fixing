@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class ItemInform : MonoBehaviour
 {
+<<<<<<< HEAD
+
+}
+=======
     public int itemtype;
     public string needName="";
     private void OnEnable()
@@ -36,3 +40,4 @@ public class ItemInform : MonoBehaviour
         }
     }
 }
+>>>>>>> 79033a8c840b6d5d0502c36bc40cb88628bf64c4

@@ -208,6 +208,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 123404359}
+  - component: {fileID: 123404360}
   m_Layer: 5
   m_Name: Inv3
   m_TagString: Untagged
@@ -234,6 +235,14 @@ RectTransform:
   m_AnchoredPosition: {x: 560, y: 100}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &123404360
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123404358}
+  m_CullTransparentMesh: 0
 --- !u!1 &215160639
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,6 +548,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 745757701}
+  - component: {fileID: 745757702}
   m_Layer: 5
   m_Name: Inv5
   m_TagString: Untagged
@@ -565,6 +575,14 @@ RectTransform:
   m_AnchoredPosition: {x: 560, y: -100}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &745757702
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745757700}
+  m_CullTransparentMesh: 0
 --- !u!1 &982354054
 GameObject:
   m_ObjectHideFlags: 0
@@ -890,6 +908,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1144692986}
+  - component: {fileID: 1144692987}
   m_Layer: 5
   m_Name: Inv6
   m_TagString: Untagged
@@ -916,6 +935,14 @@ RectTransform:
   m_AnchoredPosition: {x: 560, y: -200}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1144692987
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144692985}
+  m_CullTransparentMesh: 0
 --- !u!1 &1358705321
 GameObject:
   m_ObjectHideFlags: 0
@@ -1009,6 +1036,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9ced2fbd6dc57a4fba3ff4fb40e77bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  child: []
+  sprites:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &1360602083
 GameObject:
   m_ObjectHideFlags: 0
@@ -1018,6 +1054,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1360602084}
+  - component: {fileID: 1360602085}
   m_Layer: 5
   m_Name: Inv7
   m_TagString: Untagged
@@ -1044,6 +1081,14 @@ RectTransform:
   m_AnchoredPosition: {x: 560, y: -300}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1360602085
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360602083}
+  m_CullTransparentMesh: 0
 --- !u!1 &1387200262
 GameObject:
   m_ObjectHideFlags: 0
@@ -1294,7 +1339,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 560, y: 300}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 70, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1839318536
 MonoBehaviour:
@@ -1314,7 +1359,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 4786912a1130ab6449c605b5de274852, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1341,6 +1386,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1853250658}
+  - component: {fileID: 1853250659}
   m_Layer: 5
   m_Name: Inv4
   m_TagString: Untagged
@@ -1367,6 +1413,14 @@ RectTransform:
   m_AnchoredPosition: {x: 560, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1853250659
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853250657}
+  m_CullTransparentMesh: 0
 --- !u!1 &1951916254
 GameObject:
   m_ObjectHideFlags: 0
@@ -1376,6 +1430,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1951916255}
+  - component: {fileID: 1951916256}
   m_Layer: 5
   m_Name: Inv2
   m_TagString: Untagged
@@ -1402,6 +1457,14 @@ RectTransform:
   m_AnchoredPosition: {x: 560, y: 200}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1951916256
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951916254}
+  m_CullTransparentMesh: 0
 --- !u!224 &2010557937
 RectTransform:
   m_ObjectHideFlags: 0

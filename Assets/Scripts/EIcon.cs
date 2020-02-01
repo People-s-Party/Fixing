@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class DialogueText : MonoBehaviour
+public class EIcon : MonoBehaviour
 {
     private void OnEnable()
     {

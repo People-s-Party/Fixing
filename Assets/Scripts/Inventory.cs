@@ -26,6 +26,7 @@ public class Inventory : MonoBehaviour
         for (int i = 1; i < 8; i++)
         {
             GameObject invTemp = GameObject.Find("Inv" + i);
+<<<<<<< HEAD
             if (!invTemp.GetComponent<InventoryInform>().hasItem)
             {
                 if (!isAdded)
@@ -42,6 +43,9 @@ public class Inventory : MonoBehaviour
 
                 }
             }
+=======
+            GameObject eItem = GameObject.Find(name);
+>>>>>>> cbd39af985799a26c00ed54a65fd03ec5736ecc1
 
 
         }

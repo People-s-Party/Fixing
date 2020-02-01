@@ -8,7 +8,6 @@ public class ItemInform : MonoBehaviour
     public int itemtype;
     public string needName="";
 <<<<<<< HEAD
-<<<<<<< HEAD
 
     private void Start()
     {
@@ -17,8 +16,6 @@ public class ItemInform : MonoBehaviour
 =======
     public int dialogueNum = 0;
 >>>>>>> cbd39af985799a26c00ed54a65fd03ec5736ecc1
-=======
->>>>>>> parent of cbd39af... something
     private void OnEnable()
     {
         Messenger.AddListener<string>(Events.Epressed, action);
@@ -58,7 +55,10 @@ public class ItemInform : MonoBehaviour
                     }
                 }
             }
-            
+            if (dialogueNum != 0)
+            {
+                Messenger.Broadcast<int>(Events.dialogue, dialogueNum);
+            }            
         }
     }
 <<<<<<< HEAD

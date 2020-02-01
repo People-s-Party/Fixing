@@ -20,6 +20,7 @@ public class DialogueText : MonoBehaviour
     {
         transform.Find("EName").gameObject.SetActive(true);
         transform.Find("EName").GetComponent<TextMeshProUGUI>().text = name;
+        transform.Find("EName").GetComponent<PressedE>().subjectname = name;
     }
     void RemoveText()
     {

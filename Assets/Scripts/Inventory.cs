@@ -25,7 +25,6 @@ public class Inventory : MonoBehaviour
         {
             GameObject invTemp = GameObject.Find("Inv" + i);
             GameObject eItem = GameObject.Find(name);
-            invTemp.AddComponent<Image>().sprite = 
 
 
         }

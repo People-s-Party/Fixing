@@ -6,6 +6,21 @@ public class ItemInform : MonoBehaviour
 {
     public int itemtype;
     public string needName="";
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+    private void Start()
+    {
+
+    }
+=======
+    public int dialogueNum = 0;
+>>>>>>> cbd39af985799a26c00ed54a65fd03ec5736ecc1
+=======
+>>>>>>> parent of cbd39af... something
+>>>>>>> parent of ee82e04... aaa
     private void OnEnable()
     {
         Messenger.AddListener<string>(Events.Epressed, action);

@@ -34,7 +34,7 @@ using UnityEngine.SceneManagement;
 
 public enum Events {
     Interact,
-    clicked
+    Interactoff
 }
 
 static internal class Messenger {

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class DialogueText : MonoBehaviour
 {
@@ -17,7 +18,9 @@ public class DialogueText : MonoBehaviour
 
     void PrintText(string name)
     {
-        GetComponentInChildren<TextMesh>().text = name;
+        gameObject.transform.localScale = Vector3.one;
+        GetComponentInChildren<TextMeshProUGUI>().text = name;
 
     }
+
 }
